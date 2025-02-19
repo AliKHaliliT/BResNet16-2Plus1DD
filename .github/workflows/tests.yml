@@ -1,6 +1,10 @@
 name: Tests
 
 on:
+  push:
+    paths:
+      - "BResNet162Plus1DD/**"
+      - "tests/**"
   pull_request:
     paths:
       - "BResNet162Plus1DD/**"
