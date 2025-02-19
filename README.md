@@ -21,7 +21,7 @@ They excel in video analysis (action recognition, motion detection) where spatia
 
 ## Architectural Design
 In traditional ResNet architectures:
-- **Basic residual layers** stack two convolutional layers on the main path and one convolutional layer on the shortcut path. These blocks, while effective, have relatively high computational demands.
+- **Basic residual layers** stack two convolutional layers on the main path and one convolutional layer on the shortcut path.
 - **Bottleneck residual layers** stack three convolutional layers on the main path, with the first and last layers being 1x1 convolutions (bottleneck layers) to reduce computation.
 
 ### Why "16"?
