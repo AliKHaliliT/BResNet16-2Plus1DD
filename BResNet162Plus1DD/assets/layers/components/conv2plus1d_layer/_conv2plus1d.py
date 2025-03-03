@@ -1,10 +1,9 @@
-from tensorflow.keras.saving import register_keras_serializable # type: ignore
 import tensorflow as tf
 from math import ceil
 from typing import Union, Any
 
 
-@register_keras_serializable()
+@tf.keras.utils.register_keras_serializable()
 class _Conv2Plus1D(tf.keras.layers.Layer):
 
     """

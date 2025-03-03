@@ -1,11 +1,10 @@
-from tensorflow.keras.saving import register_keras_serializable # type: ignore
 import tensorflow as tf
 from .assets.layers.conv2plus1d_layer import Conv2Plus1DLayer
 from .assets.blocks.bottleneck_residual2plus1d_d import BottleneckResidual2Plus1DD
 from typing import Union, Any
 
 
-@register_keras_serializable()
+@tf.keras.utils.register_keras_serializable()
 class BResNet162Plus1DD(tf.keras.Model):
 
     """
